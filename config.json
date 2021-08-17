@@ -1,0 +1,121 @@
+{
+  "read-dir": "/home/shoulderhu/Data/DVWA/dvwa-brute-http-hydra",
+  "write-dir": "/home/shoulderhu/Data/DVWA",
+  "pcap": {
+    "demo.pcap": {
+      "proto": "tcp or udp or both",
+      "label": 0,
+      "index": {
+        "tcp": "1-10,15",
+        "udp": "2-3,11"
+      },
+      "enable": false
+    },
+    "tpot.pcap_old_4": {
+      "label": 1,
+      "output": "tpot_1.csv",
+      "enable": false,
+      "comment": [""]
+    },
+    "Monday-WorkingHours.pcap": {
+      "output": "monday.csv",
+      "enable": false,
+      "comment": "CIC-IDS 2017 Monday"
+    },
+    "Tuesday-WorkingHours.pcap": {
+      "output": "tuesday.csv",
+      "index": {
+        "tcp": "tuesday.txt"
+      },
+      "enable": false,
+      "comment": "CIC-IDS 2017 Tuesday"
+    },
+    "Wednesday-WorkingHours.pcap": {
+      "output": "wednesday.csv",
+      "index": {
+        "tcp": "wednesday.txt"
+      },
+      "enable": false,
+      "comment": "CIC-IDS 2017 Wednesday"
+    },
+    "Thursday-WorkingHours.pcap": {
+      "output": "thursday.csv",
+      "index": {
+        "tcp": "thursday.txt"
+      },
+      "enable": false,
+      "comment": "CIC-IDS 2017 Thursday"
+    },
+    "Friday-WorkingHours.pcap": {
+      "output": "friday.csv",
+      "index": {
+        "tcp": "friday.txt"
+      },
+      "enable": false,
+      "comment": "CIC-IDS 2017 Friday"
+    },
+    "*.pcap*": {
+      "label": 1,
+      "enable": false,
+      "comment": [""]
+    },
+    "2017-05-01_normal_alexa3.pcap*": {
+      "label": 0,
+      "enable": false,
+      "comment": [""]
+    },
+    "dvwa-dos-*-slowhttptest.pcap": {
+      "label": 1,
+      "output": "dvwa-dos-slowloris-slowhttptest.csv",
+      "enable": false
+    },
+    "win-botnet-ares.pcap": {
+      "label": 1,
+      "output": "win-botnet-ares.csv",
+      "enable": false
+    },
+    "dvwa-xss-xsstrike.pcap": {
+      "label": 1,
+      "output": "dvwa-xss-xsstrike.csv",
+      "enable": false
+    },
+    "dvwa-brute-uri-dirb.pcap": {
+      "label": 1,
+      "output": "dvwa-brute-uri-dirb.csv",
+      "enable": false
+    },
+    "dvwa-brute-uri-gobuster.pcap": {
+      "label": 1,
+      "output": "dvwa-brute-uri-gobuster.csv",
+      "enable": false
+    },
+    "dvwa-sql-union-sqlmap.pcap": {
+      "output": "dvwa-sql-union-sqlmap.csv",
+      "index": {
+        "tcp": "dvwa-sql-union-sqlmap.txt"
+      },
+      "enable": false
+    },
+    "dvwa-sql-bool-sqlmap-split.pcap": {
+      "output": "dvwa-sql-bool-sqlmap-split.csv",
+      "index": {
+        "tcp": "dvwa-sql-bool-sqlmap-split.txt"
+      },
+      "enable": false
+    },
+    "dvwa-brute-http-patator.pcap": {
+      "output": "dvwa-brute-http-patator.csv",
+      "index": {
+        "tcp": "dvwa-brute-http-patator.txt"
+      },
+      "enable": false
+    },
+    "dvwa-brute-http-hydra.pcap": {
+      "output": "dvwa-brute-http-hydra.csv",
+      "index": {
+        "tcp": "dvwa-brute-http-hydra.txt"
+      },
+      "enable": true
+    }
+  }
+}
